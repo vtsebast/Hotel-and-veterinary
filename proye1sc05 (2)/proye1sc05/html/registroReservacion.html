@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="../css/reset.css">
+
+
+    <!-- 2. Archivo que contiene la tipografia de la letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/693a755d78.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- 3. Estilos personalizados -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/registroCita.css">
+    <title>Moka - Inicio</title>
+
+    <body>
+        <header class="header-principal">
+            <div class="Logo">
+                <img src="../imgs/Mokalogo.png" alt="Logo de Moka">
+            </div>
+            <div class="navigation">
+                <nav>
+                    <a href="../html/citas.html">Citas</a>
+                    <a href="">Expedientes</a>
+                    <a href="../html/perfilUsuario.html">Mi perfil</a>
+                    <a href="../html/mascotas.html">Mascotas</a>
+                    <a href="">Reportes</a>
+                    <a href="../html/reserv.html">Reservaciones</a>
+                    <a href="../html/usuarios.html">Usuarios</a>
+                    <a href="../html/pagos.html">Pagos</a>
+                </nav>
+                <div class="divider"></div>
+                <div class="iniciar-sesion">
+                    <a href="../index.html" id="iniciar-sesion-button">Cerrar sesión</a>
+                </div>
+            </div>
+        </header>
+        <section class="sct-formularioMetodoPago">
+            <div class="sct-bloqueMetodoPago">
+                <div class="sct-metodoPago_titulo">
+                    <p>Registro de reservación</p>
+                </div>
+
+                <form class="form">
+                    <section class="sct-metodoPago">
+                        <div class="sct-formulario_metodoPago">
+
+                            <div class="sct-formulario_nombre">
+                                <label for="txt-nombreMascota">Nombre de la mascota:</label>
+                                <div>
+                                    <select id="nombreMascota">
+                                        <option>-- Seleccione su mascota --</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="sct-formulario_nombre">
+                                <label for="txtnombreDuenno">Nombre del dueño</label>
+                                <div>
+                                    <select id="txt-nombreDuenno">
+                                        <option>--Dueño--</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="sct-formulario_nombre">
+                                <label for="fechaCita">Fecha de entrada:</label>
+                                <input type="date" id="fechaEntrada">
+                            </div>
+                            <div class="sct-formulario_nombre">
+                                <label for="fechaCita">Fecha de salida:</label>
+                                <input type="date" id="fechaSalida">
+                            </div>
+
+                            <div class="sct-formulario_nombre">
+                                <label for="txt-nombreTarjeta">Comentarios sobre cuidados:</label>
+                                <div><input type="texto" id="txt-observaciones" placeholder="Detalle sobre los cuidados" />
+                                </div>
+                            </div>
+
+
+                            <button type="button" id="btn-agregar">Agregar</button>
+                        </div>
+                    </section>
+                </form>
+            </div>
+            <div class="sct-botones-metodosdePago">
+                <a href="../html/reserv.html" class="btn-volver">Volver</a>
+
+
+            </div>
+        </section>
+        <script src="../js/nav.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="../js/servicio-general.js"></script>
+        <script src="../js/registroReservacion.js"></script>
+        <script src="../js/listado_select.js"></script>
+    </body>

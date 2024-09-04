@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <script src="https://kit.fontawesome.com/693a755d78.js" crossorigin="anonymous"></script>
+
+    <!-- 2. Archivo que contiene la tipografia de la letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- 3. Estilos personalizados -->
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/expedienteMascotas.css">
+    <title>Moka - Perfil mascota</title>
+
+</head>
+
+<body>
+    <header class="header-principal">
+        <div class="Logo">
+            <img src="../imgs/Mokalogo.png" alt="Logo de Moka">
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="">Citas</a>
+                <a href="">Expedientes</a>
+                <a href="">Mi perfil</a>
+                <a href="">Mascotas</a>
+                <a href="">Reportes</a>
+                <a href="">Reservaciones</a>
+                <a href="">Usuarios</a>
+                <a href="">Pagos</a>
+            </nav>
+            <div class="divider"></div>
+            <div class="iniciar-sesion">
+                <a href="../index.html" id="iniciar-sesion-button">Cerrar sesion</a>
+            </div>
+        </div>
+    </header>
+    <section class="sct-perfilMascota">
+        <h1>Expediente</h1>
+
+        <div class="sct-infoMascota">
+            <h2>Información general</h2>
+            <div class="fotoMascota">
+                <img src="../imgs/Susy.jpg" alt="Fotografía de la mascota">
+            </div>
+            <div class="inf-general">
+                <div>
+                    <p>Nombre de la mascota:</p>
+                    <p>Susy</p>
+                </div>
+                <div>
+                    <p>Edad:</p>
+                    <p>9 meses</p>
+                </div>
+                <div>
+                    <p>Número del dueño:</p>
+                    <p>8123-4567</p>
+                </div>
+                <div>
+                    <p>Padecimientos:</p>
+                    <p>No hay padecimientos registrados</p>
+                </div>
+                <div>
+                    <p>Dirección:</p>
+                    <p>calle 15, avenida 24, San Rafael, Heredia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sct-observaciones">
+        <h2>Observaciones</h1>
+            <div class="sct-botones-metodosdePago">
+                <a href="../html/inicioUsuarioDoc.html" class="btn-volver" id="btn-volver">Volver</a>
+            </div>
+
+            <div class="bloqueTabla">
+                <table class="tbl-metodosPago">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Motivo de la cita</th>
+                            <th>Calificación</th>
+                            <th>Observaciones</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>25/01/22</td>
+                            <td>Vacunas</td>
+                            <td>★★★</td>
+                            <td> Se le aplicaron las vacunas parvovirus, moquillo y polivalente.</td>
+                            <td><button id="btn-eliminar">Eliminar</button><button id="btn-editar">Editar</button></td>
+                        </tr>
+                        <tr>
+                            <td>24/04/22</td>
+                            <td>Vacunas</td>
+                            <td>★★★</td>
+                            <td> Se le aplicaron las vacuna refuerzo polivalente.</td>
+                            <td><button id="btn-eliminar">Eliminar</button><button id="btn-editar">Editar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="sct-botones-metodosdePago-abajo">
+                <a href="../html/observaciones.html" class="btn-agregarMetodoPago">Nueva Observación</a>
+            </div>
+    </section>
+    <script src="../js/nav.js"></script>
+    <script src="../js/expedienteMascota.js"></script>
+</body>
+
+</html>

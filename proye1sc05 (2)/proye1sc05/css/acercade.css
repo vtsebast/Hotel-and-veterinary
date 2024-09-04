@@ -1,0 +1,412 @@
+/*#F09D51, #313638, #E8E9EB*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+.sct-info-empresa {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+}
+
+.sct-info-empresa p {
+    font-size: 100px;
+    padding: 0px 10px;
+}
+
+.sct-info-empresa p.company-name {
+    font-size: 80px;
+    font-weight: bold;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .09em solid #e2e2e2;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 0 auto 0;
+    /* Gives that scrolling effect as the typing happens */
+    animation: typing 0s steps(40, end), blink-caret .5s step-end infinite;
+}
+
+.sct-info-empresa p.veterinaria-word {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.sct-info-empresa .Slogan {
+    display: flex;
+    height: 100px;
+    align-self: flex-start;
+    padding-left: 7%;
+    padding-top: 10%;
+    padding-bottom: 4%;
+}
+
+.sct-info-empresa .objetivo {
+    font-size: 30px;
+    display: flex;
+    height: 100px;
+    align-self: flex-start;
+    padding-left: 7%;
+    padding-top: 5%;
+    padding-bottom: 4%;
+}
+
+.sct-info-empresa .sct-info_fotos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    align-self: flex-end;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 100%
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+.sct-titulo {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 5%;
+    width: 80%;
+    height: 100px;
+}
+
+.sct-titulo h2 {
+    font-size: 80px;
+}
+
+.sct-subtitulo h2 {
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border: none;
+}
+
+
+/* Lista de mapas */
+
+.sct-contacto .sct-ubicaciones {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sct-contacto i.fa-waze {
+    font-size: 100px;
+    padding-right: 50px;
+}
+
+.sct-contacto i.fa-map-marker {
+    font-size: 90px;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Seccion Personal*/
+
+#sct-infoEquipo h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color: #000
+}
+
+#sct-infoEquipo p {
+    font-size: 30px;
+    display: flex;
+    align-self: flex-start;
+    padding: 3%;
+    color: #000
+}
+
+#sct-infoEquipo {
+    padding-bottom: 6%;
+    background-color: rgb(245, 245, 245);
+    padding-left: 25px;
+}
+
+#sct-infoEquipo .integranteIzquierda p {
+    font-size: 20px;
+}
+
+#sct-infoEquipo .integranteDerecha p {
+    font-size: 20px;
+}
+
+#sct-infoEquipo .integranteIzquierda {
+    display: flex;
+    justify-content: center;
+}
+
+#sct-infoEquipo .fotoIzquierdaR {
+    display: flex;
+    width: 20%;
+    padding-left: 30px;
+}
+
+#sct-infoEquipo .fotoIzquierdaR img {
+    width: 100%;
+}
+
+#sct-infoEquipo .nombreYRol {
+    padding-top: 5%;
+    font-size: 25px;
+    color: #000;
+}
+
+#sct-infoEquipo .integranteDerecha {
+    display: flex;
+    justify-content: center;
+}
+
+#sct-infoEquipo .fotoDerecha {
+    width: 20%;
+}
+
+#sct-infoEquipo .fotoDerecha img {
+    width: 100%
+}
+
+#sct-infoEquipo .nombreYRolIzquierda {
+    padding-top: 5%;
+    font-size: 25px;
+    padding-right: 10%;
+    color: #000;
+}
+
+
+/* Contacto seccion */
+
+.sct-contacto {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sct-contacto .sct-contacto_sub-titulo {
+    margin-bottom: 10px;
+}
+
+.sct-contacto p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sct-contacto .subtitulo-inf {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.sct-contacto .sct-contacto_lista-contactos p {
+    font-size: 25px;
+}
+
+
+/* Formulario seccion */
+
+.sct-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+}
+
+.sct-formulario_formulario {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.sct-formulario_titulo {
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 5%;
+}
+
+.sct-formulario_formulario .sct-formulario_formulario_sub-titulo {
+    margin-bottom: 10px;
+}
+
+.sct-formulario_formulario .form-todo {
+    width: 46%;
+}
+
+.sct-formulario_formulario .form-comment {
+    width: 46%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.sct-formulario_formulario p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sct-formulario_formulario .subtitulo-inf {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.sct-formulario_formulario #txt-nombre {
+    display: flex;
+    height: 40px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.sct-formulario_formulario #txt-correo {
+    display: flex;
+    height: 40px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.sct-formulario_formulario #txt-telefono {
+    display: flex;
+    height: 40px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.sct-formulario_formulario #txt-comentario {
+    height: 100px;
+    width: 90%;
+    margin-bottom: 20px;
+    align-self: flex-end;
+}
+
+.sct-formulario_formulario #btn-enviar {
+    background: #F06543;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 0;
+    height: 40px;
+    width: 20%;
+    margin-bottom: 20px;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.sct-formulario #btn-enviar:hover {
+    background-color: #f89279;
+    color: white;
+    border: 0 solid white;
+    border-radius: 2px;
+}
+
+
+/* Redes sociales seccion */
+
+.sct-redes-sociales {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sct-redes-sociales_body-redes {
+    width: 100%;
+}
+
+.sct-redes-sociales ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sct-redes-sociales_lista i.fa-facebook {
+    font-size: 150px;
+    color: rgb(67, 67, 243);
+}
+
+.sct-redes-sociales_lista i.fa-twitter-square {
+    font-size: 150px;
+    color: rgb(110, 159, 231);
+}
+
+.sct-redes-sociales_lista i.fa-instagram-square {
+    font-size: 150px;
+    color: rgb(174, 43, 214);
+}
+
+.sct-redes-sociales_lista i.fa-facebook:hover {
+    color: #313638;
+    transition: all .3s ease-in-out;
+}
+
+.sct-redes-sociales_lista i.fa-instagram-square:hover {
+    color: #313638;
+    transition: all .3s ease-in-out;
+}
+
+.sct-redes-sociales_lista i.fa-twitter-square:hover {
+    color: #313638;
+    transition: all .3s ease-in-out;
+}
+
+.sct-subtitulo {
+    padding-top: 5%;
+}
+
+#sct-infoEquipo {
+    padding-top: 3%;
+}

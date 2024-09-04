@@ -1,0 +1,301 @@
+    /* Usar esta tabla como guia de cualquier tabla, todo lo que se aplique aquí se aplicará a todas las demás tablas */
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    header {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #sct-lista {
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        padding: 7%;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../imgs/paws-background-2.png");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .sct-lista-titulo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .sct-lista-titulo .titulo-description {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        background-color: #bbc9c554;
+        height: 200px;
+        padding: 30px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .titulo-description h2 {
+        width: 100%;
+        padding: 5px;
+        color: rgb(4, 4, 4);
+        font-size: 30px;
+        height: 30%;
+    }
+
+    .titulo-description p {
+        padding: 0 0 0 20px;
+        color: rgb(0, 0, 0);
+        align-self: center;
+        height: 70%;
+        line-height: 1.6em;
+    }
+
+    #sct-lista h1 {
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5vw;
+        font-weight: bolder;
+        letter-spacing: 10px;
+        
+    }
+    
+    .bloqueTabla {
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        box-shadow: 2px 0 12px 0px rgb(228, 228, 228);
+    }
+    
+    .tbl {
+        width: 100%;
+    }
+    
+    .sct-lista H1 {
+        background-color: #edf2f162;
+        width: 50%;
+        padding: 5% 0;
+        border-style: solid;
+    }
+
+    .tbl thead {
+        background-color: #d86223;
+        color: white;
+        font-size: 18px;
+    }
+
+
+    .tbl thead tr th {
+        padding: 10px 1%;
+        vertical-align: middle;
+    }
+    
+    .tbl tbody tr {
+        border-spacing: 20px;
+    }
+
+    .tbl tbody tr td {
+        padding: 10px 1%;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+    }
+    
+    .tbl tbody tr:nth-child(even) {
+        background: #ecebeb;
+        font-weight: bold;
+    }
+    
+    .tbl tbody tr:nth-child(odd) {
+        background: #fafafa;
+        font-weight: bold;
+    }
+
+    .tbl tbody tr:nth-child(even):hover {
+        background: #c6c6c6;
+        font-weight: bold;
+    }
+    
+    .tbl tbody tr:nth-child(odd):hover {
+        background: #e8e7e7;
+        font-weight: bold;
+    }
+
+    .tbl tbody tr:nth-child(even) .btn-editar {
+        margin: 2px;
+        background: rgb(95, 188, 95);
+        color: rgb(255, 255, 255);
+        border: solid;
+        border-color: green;
+        border-width: 0px;
+        vertical-align: middle;
+        cursor: pointer;
+        padding: 5px;
+        width: 75px;
+        height:30px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    
+    .tbl tbody tr:nth-child(odd) .btn-editar {
+        margin: 2px;
+        background: transparent;
+        color: rgb(60, 174, 60);
+        border: solid;
+        border-color: green;
+        border-width: 1px;
+        cursor: pointer;
+        padding: 5px;
+        width: 75px;
+        height:30px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .tbl > tbody > tr > td:first-child {
+        padding: 20px;
+        background-color: #dd8556;
+        color: white;
+        border-style: solid;
+        border-color: rgb(234, 149, 65);
+        border-width: 0px 4px 2px 0px;
+    }
+    
+    .btn-editar:hover {
+        background: #ff8870;
+    }
+    
+    .btn-eliminar {
+        font-weight: bold;
+        margin: 2px;
+        color: white;
+        border: none;
+        background: rgb(213, 95, 95);
+        cursor: pointer;
+        padding: 5px;
+        width: 75px;
+        height:30px;
+        border-radius: 5px;
+    }
+    
+    .btn-eliminar:hover {
+        background: #ff6b6b;
+    }
+    
+    #btn-editar {
+        margin: 2px;
+        background: #fefefe;
+        color: black;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+        width: 65px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    
+    #btn-editar:hover {
+        background: #ff8870;
+    }
+    
+    #btn-eliminar {
+        font-weight: bold;
+        margin: 2px;
+        color: white;
+        border: none;
+        background: rgb(122, 1, 1);
+        cursor: pointer;
+        padding: 5px;
+        width: 65px;
+        border-radius: 5px;
+    }
+    
+    #btn-eliminar:hover {
+        background: #ff6b6b;
+    }
+    
+    .btn-expediente {
+        font-weight: bold;
+        margin: 2px;
+        color: white;
+        border: none;
+        background: #05C793;
+        cursor: pointer;
+        padding: 5px;
+        width: 80px;
+        border-radius: 5px;
+    }
+    
+    .btn-expediente:hover {
+        background: #ff6b6b;
+    }
+
+    .btn-volver {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 2px;
+        border: none;
+        background: #05C793;
+        cursor: pointer;
+        padding: 5px;
+        width: 100px;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn-verTransaccion {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 2px;
+        border: none;
+        background: #05C793;
+        cursor: pointer;
+        padding: 5px;
+        height: 50px;
+        width: 200px;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn-agregar {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 2px;
+        border: none;
+        background: #05C793;
+        cursor: pointer;
+        padding: 5px;
+        height: 50px;
+        width: 350px;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sct-botones-verdes {
+        padding-top: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    

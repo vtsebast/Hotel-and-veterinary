@@ -1,0 +1,476 @@
+/*#F09D51, #313638, #E8E9EB*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+.sct-info-empresa {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+}
+
+.sct-info-empresa p {
+    font-size: 100px;
+    padding: 0px 10px;
+}
+
+.sct-info-empresa p.company-name {
+    font-size: 130px;
+    font-weight: bold;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .09em solid #e2e2e2;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 0 auto 0;
+    /* Gives that scrolling effect as the typing happens */
+    animation: typing 0s steps(40, end), blink-caret .5s step-end infinite;
+}
+
+.sct-info-empresa p.veterinaria-word {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.sct-info-empresa .Slogan {
+    display: flex;
+    height: 100px;
+    align-self: flex-start;
+    padding-left: 7%;
+    padding-top: 10%;
+    padding-bottom: 4%;
+}
+
+.sct-info-empresa .sct-info_fotos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    align-self: flex-end;
+}
+
+.sct-info-empresa .sct-info__fotografia {
+    display: flex;
+    width: 90%;
+    border-style: solid;
+    background-image: url(../imgs/dog-header-background.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    border-style: solid;
+}
+
+.sct-info-empresa .sct-info__2nd-fotografia {
+    width: 10%;
+    background-image: linear-gradient(to left, rgb(245, 245, 245), #e9e9e9);
+    opacity: 0.2;
+}
+
+.sct-info-empresa .divider-horizontal {
+    display: flex;
+    height: 1px;
+    background-color: rgb(218, 218, 218);
+    margin: 2% 5% 5% 5%;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 100%
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #313638;
+    }
+}
+
+.sct-titulo {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    flex-direction: column;
+    margin-bottom: 5%;
+    width: 80%;
+}
+
+.sct-titulo .sct-titulo_text {
+    display: flex;
+}
+
+.sct-titulo p {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.sct-titulo .fa-paw {
+    font-size: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #05C793;
+    padding: 2px;
+}
+
+#fa-paw-orange {
+    color: #f88163;
+}
+
+.sct-titulo .divider-horizontal {
+    display: flex;
+    height: 1px;
+    margin: 40px 0px;
+    background-color: rgb(218, 218, 218);
+    width: 100%;
+}
+
+.sct-titulo p {
+    font-size: 80px;
+}
+
+.sct-subtitulo p {
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border: none;
+}
+
+
+/* Lista de servicios */
+
+.sct-servicios {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sct-servicios p {
+    font-size: 80px;
+}
+
+.sct-servicios .sct-servicios_body-servicios {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sct-servicios .sct-servicios_lista {
+    display: flex;
+    height: 100%;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.sct-servicios li.sct-servicios_sub-titulo p {
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border: none;
+}
+
+.sct-servicios li {
+    margin-bottom: 30px;
+}
+
+.sct-servicios a {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    border-style: solid;
+    border-color: #E8E9EB;
+    border-width: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sct-servicios a:hover {
+    background-color: #E0DFD5;
+}
+
+
+/* Lista de fotos */
+
+.sct-banner-fotos {
+    background-color: #E8E9EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sct-banner-fotos .sct-banner-fotos_body-banner-fotos {
+    width: 100%;
+    margin: 30px;
+}
+
+.slide {
+    display: none;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #E0DFD5;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Contacto seccion */
+
+.sct-contacto {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sct-contacto .sct-contacto_sub-titulo {
+    margin-bottom: 10px;
+}
+
+.sct-contacto p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sct-contacto .subtitulo-inf {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+
+/* Formulario seccion */
+
+.sct-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sct-formulario_formulario {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.sct-formulario_titulo {
+    font-size: 70px;
+    margin-top: 40px;
+    margin-bottom: 5%;
+}
+
+.sct-formulario_formulario .sct-formulario_formulario_sub-titulo {
+    margin-bottom: 10px;
+}
+
+.sct-formulario_formulario .form-todo {
+    width: 46%;
+}
+
+.sct-formulario_formulario .form-comment {
+    width: 46%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.sct-formulario_formulario .form-comment p {
+    align-items: center;
+}
+
+.sct-formulario_formulario .subtitulo-inf {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.sct-formulario_formulario #txt-nombre {
+    display: flex;
+    height: 40px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.sct-formulario_formulario #txt-correo {
+    display: flex;
+    height: 40px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.sct-formulario_formulario #txt-telefono {
+    display: flex;
+    height: 40px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.sct-formulario_formulario #txt-comentario {
+    height: 100px;
+    width: 90%;
+    margin-bottom: 20px;
+    align-self: flex-end;
+}
+
+.sct-formulario_formulario #btn-enviar {
+    background: #F06543;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 0;
+    height: 40px;
+    width: 20%;
+    margin-bottom: 20px;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.sct-formulario #btn-enviar:hover {
+    background-color: #f89279;
+    color: white;
+    border: 0 solid white;
+    border-radius: 2px;
+}
+
+
+/* Redes sociales seccion */
+
+.sct-redes-sociales {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sct-redes-sociales_body-redes {
+    width: 100%;
+}
+
+.sct-redes-sociales ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sct-redes-sociales_lista i.fa-facebook {
+    font-size: 150px;
+    color: rgb(67, 67, 243);
+}
+
+.sct-redes-sociales_lista i.fa-twitter-square {
+    font-size: 150px;
+    color: rgb(110, 159, 231);
+}
+
+.sct-redes-sociales_lista i.fa-instagram-square {
+    font-size: 150px;
+    color: rgb(174, 43, 214);
+}
+
+.sct-redes-sociales_lista i.fa-facebook:hover {
+    color: #313638;
+    transition: all .3s ease-in-out;
+}
+
+.sct-redes-sociales_lista i.fa-instagram-square:hover {
+    color: #313638;
+    transition: all .3s ease-in-out;
+}
+
+.sct-redes-sociales_lista i.fa-twitter-square:hover {
+    color: #313638;
+    transition: all .3s ease-in-out;
+}

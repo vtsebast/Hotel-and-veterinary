@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+}
+
+#sct-listaMtdPago {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    padding: 7%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sct-listaMtdPago h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+}
+
+.bloqueTabla {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 7px;
+    border-style: ridge;
+    border-width: 2px;
+}

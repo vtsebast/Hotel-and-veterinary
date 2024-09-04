@@ -1,0 +1,83 @@
+.header-principal {
+    align-items: center;
+    /* fallback for old browsers */
+    background: white;
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 60px;
+    box-shadow: 0px 1px 10px 0.4px rgb(224, 224, 224);
+}
+
+.navigation {
+    display: flex;
+    justify-self: center;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.header-principal .navigation nav {
+    display: flex;
+    padding: 5px;
+    justify-content: space-evenly;
+    width: 70%;
+    align-items: center;
+}
+
+.header-principal .navigation a {
+    color: #1E1E24;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.header-principal .navigation a:hover {
+    color: #F06543;
+}
+
+.header-principal .Logo {
+    width: 175px;
+}
+
+.header-principal .Logo img {
+    width: 100%;
+}
+
+.header-principal .divider {
+    width: 1px;
+    background-color: rgb(224, 224, 224);
+}
+
+.header-principal .iniciar-sesion {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.header-principal .iniciar-sesion a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px;
+}
+
+.header-principal #iniciar-sesion-button {
+    background-color: #F06543;
+    width: 110px;
+    height: 30px;
+    color: white;
+    border: 0 solid white;
+    border-radius: 2px;
+}
+
+.header-principal #iniciar-sesion-button:hover {
+    background-color: #FF7256;
+    transition: all .3s ease-in-out;
+}
+
+.ocultar {
+    display: none;
+}

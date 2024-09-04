@@ -1,0 +1,57 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+}
+
+section {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+h1 {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #F06543;
+    padding: 5%;
+}
+
+h2 {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.contenido {
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+p {
+    padding: 2%;
+    font-size: 20px;
+}
+
+nav .contenido {
+    width: 100%;
+    border: 2px rgb(224, 224, 224) solid;
+}
+
+nav .contenido-hotel {
+    padding-bottom: 10px;
+}
+
+section img {
+    float: right;
+    max-width: 40%;
+    max-height: 35%;
+}
+
+.imagen {
+    height: 100px;
+    width: 100%;
+}

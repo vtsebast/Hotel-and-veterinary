@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <script src="https://kit.fontawesome.com/693a755d78.js" crossorigin="anonymous"></script>
+
+    <!-- 2. Archivo que contiene la tipografia de la letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+
+    <!-- 3. Estilos personalizados -->
+    <link rel="stylesheet" href="../css/factura.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>Moka - Inicio</title>
+
+</head>
+
+
+<body>
+    <header class="header-principal">
+        <div class="Logo">
+            <img src="../imgs/Mokalogo.png" alt="Logo de Moka">
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="../html/citas.html">Citas</a>
+                <a href="">Expedientes</a>
+                <a href="../html/perfilUsuario.html">Mi perfil</a>
+                <a href="../html/mascotas.html">Mascotas</a>
+                <a href="">Reportes</a>
+                <a href="../html/reserv.html">Reservaciones</a>
+                <a href="../html/usuarios.html">Usuarios</a>
+                <a href="../html/pagos.html">Pagos</a>
+            </nav>
+            <div class="divider"></div>
+            <div class="iniciar-sesion">
+                <a href="../index.html" id="iniciar-sesion-button">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+    </div>
+    <div id="app" class="col-11">
+
+        <h2>Factura</h2>
+
+        <div class="row my-3">
+            <div class="col-10">
+                <h1>Moka veterinaria hotel</h1>
+                <p>calle 87, avenida 46, Curridabat, San José</p>
+            </div>
+            <div class="col-2">
+                <img src="../imgs/Mokalogo.png" alt="Logo de Moka">
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="cond">
+
+            <div class="col-1">
+                <h5>Facturar a</h5>
+                <p>
+                    Roger Hidalgo Porras
+                </p>
+            </div>
+            <div class="col-1">
+                <h5>Enviar a</h5>
+                <p>
+                    roger@gmail.com
+                </p>
+            </div>
+            <div class="col-1">
+                <h5>N° de factura</h5>
+                <p>030822015</p>
+                <h5>Fecha del servico</h5>
+                <p>03/08/2022</p>
+                <h5>Fecha de pago</h5>
+                <p>03/08/2022</p>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <table class="table table-borderless factura">
+                <thead>
+                    <tr>
+                        <th>Cant.</th>
+                        <th>Descripcion</th>
+                        <th>Precio Unitario</th>
+                        <th>Importe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Revision general</td>
+                        <td>25,000.00</td>
+                        <td>25,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Alimento especial pequeño</td>
+                        <td>10,850.00</td>
+                        <td>21,700.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Total Factura</th>
+                        <th>₡ 46,700.00</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="cond">
+            <div class="col-12 mt-3">
+                <h4>Condiciones y formas de pago</h4>
+                <p>
+                    Pago con tarjeta
+                    <br /> Tarjeta: XXXX XXXX XXXX 8423
+                </p>
+            </div>
+        </div>
+        <div class="sct-btnFactura">
+            <a href="../html/listarUsuariosMetodoPago.html"> <button href="../html/listarUsuariosMetodoPago.html" class="btn-volver">Volver</button></a>
+            <button type="button" id="btn-imprimir">Imprimir</button>
+        </div>
+    </div>
+    <script src="../js/nav.js"></script>
+</body>

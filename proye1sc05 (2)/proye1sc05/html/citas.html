@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <script src="https://kit.fontawesome.com/693a755d78.js" crossorigin="anonymous"></script>
+
+    <!-- 2. Archivo que contiene la tipografia de la letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- 3. Estilos personalizados -->
+    <link rel="stylesheet" href="../css/tablas.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>Moka - Inicio</title>
+
+</head>
+
+<body>
+    <header class="header-principal">
+        <div class="Logo">
+            <img src="../imgs/Mokalogo.png" alt="Logo de Moka">
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="../html/citas.html">Citas</a>
+                <a href="">Expedientes</a>
+                <a href="../html/perfilUsuario.html">Mi perfil</a>
+                <a href="../html/mascotas.html">Mascotas</a>
+                <a href="">Reportes</a>
+                <a href="../html/reserv.html">Reservaciones</a>
+                <a href="../html/usuarios.html">Usuarios</a>
+                <a href="../html/pagos.html">Pagos</a>
+            </nav>
+            <div class="divider"></div>
+            <div class="iniciar-sesion">
+                <a href="../index.html" id="iniciar-sesion-button">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+    <section id="sct-lista" class="sct-lista">
+        <div class="sct-lista-titulo">
+            <h1>CITAS</h1>
+            <div class="titulo-description">
+                <h2>¡Bienvenido(a) a la sección de citas!</h2>
+                <p>A continuación, podrás obtener información de las citas registradas, agendar nuevas citas, y modificar alguna ya existente.</p>
+            </div>
+        </div>
+
+        <div class="sct-botones-verdes">
+            <a href="../html/inicioUsuario.html" class="btn-volver" id="btn-volver">Volver</a>
+            <a href="../html/registroCita.html" class="btn-agregar">Crear cita</a>
+        </div>
+
+        <div class="bloqueTabla">
+
+
+            <table class="tbl">
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Mascota</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Observaciones</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Rodrigo</td>
+                        <td>Susy</td>
+                        <td>20-08-2022</td>
+                        <td> 1:00 P.M</td>
+                        <td>Karolina</td>
+                        <td>
+                            <button type="button" class="btn-editar">Modificar</button>
+                            <button type="button" class="btn-eliminar">Cancelar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rodrigo</td>
+                        <td>Paco</td>
+                        <td>18-08-2022</td>
+                        <td> 2:00 P.M</td>
+                        <td>Karolina</td>
+                        <td>
+                            <button class="btn-editar">Modificar</button>
+                            <button class="btn-eliminar">Cancelar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rodrigo</td>
+                        <td>Susy</td>
+                        <td>01-08-2022
+                            <td>
+                                <td>/ 12:00 P.M</td>
+                                <td>Karolina</td>
+                                <td>
+                                    <button class="btn-editar">Modificar</button>
+                                    <button class="btn-eliminar">Cancelar</button>
+                                </td>
+                    </tr>
+                    <tr>
+                        <td>Rodrigo</td>
+                        <td>Paco</td>
+                        <td>15-07-2022</td>
+                        <td>10:00 A.M</td>
+                        <td>Karolina</td>
+                        <td>
+                            <button class="btn-editar">Modificar</button>
+                            <button class="btn-eliminar">Cancelar</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../js/moment.min.js"></script>
+<script src="../js/servicio-general.js"></script>
+<script src="../js/citas.js"></script>
+<script src="../js/nav.js"></script>
+
+
+</html>

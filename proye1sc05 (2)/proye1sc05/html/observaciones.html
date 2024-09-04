@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <link rel="stylesheet" href="../css/observaciones.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>MOKA</title>
+</head>
+
+<body>
+
+    <header class="header-principal">
+        <div class="Logo">
+            <img src="../imgs/Mokalogo.png" alt="Logo de Moka">
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="">Citas</a>
+                <a href="">Expedientes</a>
+                <a href="">Mi perfil</a>
+                <a href="">Mascotas</a>
+                <a href="">Reportes</a>
+                <a href="">Reservaciones</a>
+                <a href="">Usuarios</a>
+                <a href="">Pagos</a>
+            </nav>
+            <div class="divider"></div>
+            <div class="iniciar-sesion">
+                <a href="../index.html" id="iniciar-sesion-button">Cerrar sesion</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="sct-observaciones">
+            <div class="sct-botones-metodosdePago">
+                <a href="../html/expedienteMascota.html" class="btn-volver" id="btn-volver">Volver</a>
+            </div>
+            <div class="animal">
+                <img src="data:image/png;base64,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">
+                <h2 class="titles">Registrar observación</h2>
+            </div>
+            <div class="formulario">
+                <div class="int">
+                    <form>
+                        <div class="txt-fecha">
+                            <label for="txt-fecha">Fecha de la cita</label>
+                            <input type="date" id="txt-fecha" required>
+                        </div>
+                        <div class="txt-animal">
+                            <label for="txt-mascota">Motivo de la cita</label>
+                            <input type="text" id="txt-motivo" placeholder="Ingrese el motivo de la cita">
+
+                        </div>
+
+                        <div class="txt-textarea">
+                            <label for="txt-observacion">Observación</label>
+                            <textarea name="" id="txt-comentario" cols="41" rows="3" placeholder="Ingrese observación" required></textarea>
+                        </div>
+                        <div class="calif">
+                            <form>
+                                <p>Calificación:</p>
+                                <div class="clasificacion">
+                                    <input id="radio1" type="radio" name="estrellas" value="5">
+                                    <!--
+                          --><label for="radio1">★</label>
+                                    <!--
+                          --><input id="radio2" type="radio" name="estrellas" value="4">
+                                    <!--
+                          --><label for="radio2">★</label>
+                                    <!--
+                          --><input id="radio3" type="radio" name="estrellas" value="3">
+                                    <!--
+                          --><label for="radio3">★</label>
+                                </div>
+                        </div>
+                        </form>
+                        <div class="txt-btn">
+                            <button type="button" id="btn-guardar">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+        <script src="../js/nav.js"></script>
+        <script src="../js/observaciones.js"></script>
+    </main>
+</body>
+
+</html>

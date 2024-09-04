@@ -1,0 +1,112 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .sct-registro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sct-registro_formulario {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .sct-registro_titulo {
+        font-size: 70px;
+        margin-top: 40px;
+        margin-bottom: 5%;
+    }
+    
+    .sct-registro_formulario p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .sct-registro_formulario .txt-form {
+        display: flex;
+        height: 40px;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .sct-registro_formulario #btn-enviar {
+        font-size: 20px;
+        background: #F06543;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 0;
+        height: 40px;
+        width: 20%;
+        margin-bottom: 20px;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-radius: 5px;
+    }
+    
+    .sct-registro_formulario .txt-form_error {
+        border-color: #F06543;
+    }
+    
+    .sct-registro #btn-enviar:hover {
+        background-color: #f89279;
+        color: white;
+        border: 0 solid white;
+        border-radius: 5px;
+    }
+    
+    .sct-registro_formulario label {
+        align-self: flex-start;
+        padding: 1px 1%;
+        padding-left: 25%;
+    }
+    
+    select {
+        width: 50%;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .btn-volver {
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 2px;
+        border: none;
+        background: #05C793;
+        cursor: pointer;
+        padding: 5px;
+        height: 40px;
+        width: 20%;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+    
+    .btn-volver:hover {
+        background-color: #76c0ac;
+        color: black;
+        border: 0 solid white;
+        border-radius: 5px;
+    }
+    
+    .ocultar {
+        display: none;
+    }

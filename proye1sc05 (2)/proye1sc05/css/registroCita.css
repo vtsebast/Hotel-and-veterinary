@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sct-metodoPago {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 100%;
+}
+
+.sct-formulario_metodoPago {
+    background-color: #F0EFF4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 70%;
+}
+
+.form {
+    background-color: #F0EFF4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.sct-metodoPago_titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    margin-top: 40px;
+    margin-bottom: 5%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sct-formulario_nombre {
+    width: 100%;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: hsla(0, 0, 0, .6);
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#btn-agregar {
+    display: block;
+    background: #F06543;
+    color: hsl(0, 0, 100);
+    text-decoration: none;
+    margin: 20px 0;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+
+#btn-agregar:hover {
+    background-color: #f89279;
+    color: white;
+    border: 0 solid white;
+    border-radius: 2px;
+}
+
+select {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none!important;
+    appearance: none;
+    padding: 0;
+    width: 100%;
+    top: 6px;
+    left: 6px;
+    padding-left: 10px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    color: hsl(0, 0, 20);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none!important;
+    border: 1px solid hsla(0, 0, 0, 0.3);
+    box-shadow: inset 0 1px 4px hsla(0, 0, 0, 0.2);
+}
+
+.int-tarjeta {
+    width: 100px;
+    display: inline-block;
+    margin-right: 8px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.int-tarjeta:last-child {
+    margin-right: 0;
+}
+
+button {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    box-shadow: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 90px;
+}
+
+.sct-formularioMetodoPago {
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sct-bloqueMetodoPago {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border-style: ridge;
+    border-radius: 6px;
+    border-width: 2px;
+    background-color: #F0EFF4;
+}
+
+.sct-metodoPago .sct-expiracion {
+    float: left;
+    width: 60%;
+}
+
+.sct-metodoPago select {
+    width: 100%;
+    margin-right: 12px;
+    float: left;
+}
+
+.sct-metodoPago .sct-ccv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 25%;
+}
+
+.sct-formulario_numTarjeta {
+    padding-top: 10px;
+}
+
+.btn-volver {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 2px;
+    border: none;
+    background: #05C793;
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sct-botones-metodosdePago {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}

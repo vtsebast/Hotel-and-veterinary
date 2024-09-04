@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.factura>thead {
+    border-top: solid 3px #000;
+    border-bottom: 3px solid #000;
+}
+
+.factura>thead>tr>th:nth-child(2),
+.factura>tbod>tr>td:nth-child(2) {
+    width: 165px;
+}
+
+.factura>thead>tr>th:nth-child(n+3) {
+    text-align: right;
+}
+
+.factura>tbody>tr>td:nth-child(n+3) {
+    text-align: right;
+}
+
+.factura>tfoot>tr>th,
+.factura>tfoot>tr>th:nth-child(n+3) {
+    font-size: 24px;
+    text-align: right;
+    border-top: solid 2px #000;
+}
+
+.cond {
+    border-top: solid 2px #000;
+    width: 33%;
+}
+
+.cond h5 {
+    font-weight: bold;
+}
+
+#app {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+#btn-imprimir {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    display: block;
+    background: #F06543;
+    text-decoration: none;
+    padding: 5px 5px;
+    margin-left: 20%;
+    border-radius: 5px;
+}
+
+#btn-imprimir:hover {
+    background-color: #f89279;
+    color: white;
+    border: 0 solid white;
+    border-radius: 2px;
+}
+
+.btn-volver {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    display: block;
+    background: #05C793;
+    text-decoration: none;
+    padding: 5px 5px;
+    margin-right: 20%;
+    border-radius: 5px;
+    color: black;
+}
+
+.btn-volver:hover {
+    background-color: #79c2ae;
+    color: white;
+    border: 0 solid white;
+    border-radius: 2px;
+}
+
+.sct-btnFactura {
+    display: flex;
+    padding: 2%;
+}
+
+.sct-btnFactura a {
+    text-decoration: none;
+}

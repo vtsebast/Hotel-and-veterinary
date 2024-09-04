@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.btn-eliminar:hover {
+    background: #ff6b6b;
+}
+
+.btn-perfilMascota {
+    margin: 2px;
+    background: #05C793;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 75px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-perfilMascota:hover {
+    background: #ff6b6b;
+}
+
+
+/* seccion de Botones para volver,agregar, etc */
+
+.sct-botones-metodosdePago {
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sct-botones-metodosdePago-abajo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.table-img {
+    margin-top: 3%;
+    width: 50%;
+    height: 5%;
+}

@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+}
+
+.sct-perfilMascota {
+    font-size: 20px;
+    display: flex;
+    padding-top: 4%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoMascota {
+    margin-left: 100px;
+    display: flex;
+    align-content: center;
+    height: 300px;
+    margin-bottom: 4%;
+}
+
+.fotoMascota img {
+    height: 100%;
+}
+
+.sct-perfilMascota .sct-infoMascota {
+    padding-top: 3%;
+    width: 40%;
+}
+
+.sct-perfilMascota .sct-infoMascota div {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sct-perfilMascota .sct-infoMascota div p {
+    display: flex;
+}
+
+
+/** botones para volver y editar */
+
+.sct-btnperfilMascota {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4%;
+}
+
+.btn-volver {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 2px;
+    border: none;
+    background: #05C793;
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-editar {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 2px;
+    border: none;
+    background: #972181;
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-editar:hover {
+    background: #944986;
+}

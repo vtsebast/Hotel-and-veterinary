@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <script src="https://kit.fontawesome.com/693a755d78.js" crossorigin="anonymous"></script>
+
+    <!-- 2. Archivo que contiene la tipografia de la letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- 3. Estilos personalizados -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/tablas.css">
+    <link rel="stylesheet" href="../css/tablasReservaciones.css">
+    <link rel="stylesheet" href="../css/botonesReserv.css">
+    <title>Moka - Inicio</title>
+
+</head>
+
+<body>
+    <header class="header-principal">
+        <div class="Logo">
+            <img src="../imgs/Mokalogo.png" alt="Logo de Moka">
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="../html/citas.html">Citas</a>
+                <a href="">Expedientes</a>
+                <a href="../html/perfilUsuario.html">Mi perfil</a>
+                <a href="../html/mascotas.html">Mascotas</a>
+                <a href="">Reportes</a>
+                <a href="../html/reserv.html">Reservaciones</a>
+                <a href="../html/usuarios.html">Usuarios</a>
+                <a href="../html/pagos.html">Pagos</a>
+            </nav>
+            <div class="divider"></div>
+            <div class="iniciar-sesion">
+                <a href="../index.html" id="iniciar-sesion-button">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+
+        <!-- <button type="button" id="btn-mostrar">Mostrar lista</button> -->
+        <section id="sct-lista" class="sct-lista">
+            <h1>Reservaciones</h1>
+
+            <div class="sct-botones-verdes">
+                <a href="../html/inicioUsuario.html" class="btn-volver" id="btn-volver">Volver</a>
+                <a href="../html/registroReservacion.html" class="btn-agregar">Nueva reservación</a>
+            </div>
+
+
+
+            <div class="bloqueTabla">
+
+
+                <table id="tbl-usuarios" class="tbl" >
+                    <thead>
+                        <tr class="tbl-linea"></tr>
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Mascota</th>
+                            <th>Fecha de entrada</th>
+                            <th>Fecha de salida</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tb-clientes" class="tbl-nombres">
+                        <tr>
+                            <td>Rodrigo Hernandez</td>
+                            <td>Susy</td>
+                            <td>10/2/22</td>
+                            <td>11/2/22</td>
+                            <td>
+                                <button class="btn-editar">Modificar</button>
+                                <button class="btn-eliminar">Cancelar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pablo Cubillo Solis</td>
+                            <td>Cratos</td>
+                            <td>20/3/22</td>
+                            <td>24/3/22</td>
+                            <td>
+                                <button class="btn-editar">Modificar</button>
+                                <button class="btn-eliminar">Cancelar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cesar Zarate Guzman</td>
+                            <td>Sinder</td>
+                            <td>22/3/22</td>
+                            <td>28/3/22</td>
+                            <td>
+                                <button class="btn-editar">Modificar</button>
+                                <button class="btn-eliminar">Cancelar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jose Ledezma Chinchilla</td>
+                            <td>Chiss</td>
+                            <td>19/7/22</td>
+                            <td>24/7/22</td>
+                            <td>
+                                <button class="btn-editar">Modificar</button>
+                                <button class="btn-eliminar">Cancelar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fabian Brenes Calvo</td>
+                            <td>Oreo</td>
+                            <td>2/3/22</td>
+                            <td>3/3/22</td>
+                            <td>
+                                <button class="btn-editar">Modificar</button>
+                                <button class="btn-eliminar">Cancelar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tatiana Rodriguez Cervantes</td>
+                            <td>Gordo</td>
+                            <td>20/3/22</td>
+                            <td>24/3/22</td>
+                            <td>
+                                <button class="btn-editar">Modificar</button>
+                                <button class="btn-eliminar">Cancelar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Vannesa Lagos Calvo</td>
+                            <td>Luna</td>
+                            <td>20/8/22</td>
+                            <td>24/8/22</td>
+                            <td>
+                                <button class="btn-editar">Modificar</button>
+                                <button class="btn-eliminar">Cancelar</button>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="../js/listaReservaciones.js"></script>
+<script src="../js/reservaciones.js"></script>
+<script src="../js/nav.js"></script>
+
+</html>

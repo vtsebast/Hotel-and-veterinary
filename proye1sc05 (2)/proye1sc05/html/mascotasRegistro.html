@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <script src="https://kit.fontawesome.com/693a755d78.js" crossorigin="anonymous"></script>
+
+    <!-- 2. Archivo que contiene la tipografia de la letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <!-- 2. Archivo que contiene los scripts para funcionales especificas -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- 3. Estilos personalizados -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/agregarMascota.css">
+
+    <title>Moka</title>
+</head>
+
+<body>
+    <header class="header-principal">
+        <div class="Logo">
+            <img src="../imgs/Mokalogo.png" alt="Logo de Moka">
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="../html/citas.html">Citas</a>
+                <a href="">Expedientes</a>
+                <a href="../html/perfilUsuario.html">Mi perfil</a>
+                <a href="../html/mascotas.html">Mascotas</a>
+                <a href="">Reportes</a>
+                <a href="../html/reserv.html">Reservaciones</a>
+                <a href="../html/usuarios.html">Usuarios</a>
+                <a href="../html/pagos.html">Pagos</a>
+            </nav>
+            <div class="divider"></div>
+            <div class="iniciar-sesion">
+                <a href="../index.html" id="iniciar-sesion-button">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+    <section class="sct-formularioMetodoPago">
+        <div class="sct-bloqueMetodoPago">
+            <div class="sct-metodoPago_titulo">
+                <p>Mascota</p>
+            </div>
+
+            <form class="form">
+                <section class="sct-metodoPago">
+                    <div class="sct-formulario_metodoPago">
+                        <div class="sct-formulario_nombre">
+                            <label for="txt-nombreTarjeta">Nombre de la mascota:</label>
+                            <div><input type="texto" id="txt-nombre" placeholder="Nombre completo" />
+                            </div>
+                        </div>
+                        <div class="sct-formulario_nombre">
+                            <label for="txt-nombreTarjeta">Subir fotografía:</label>
+                            <div><input type="texto" id="txt-fotografia" placeholder="Subir del ordenador..." />
+                            </div>
+                        </div>
+                        <div class="sct-formulario_nombre">
+                            <label for="txt-nombreTarjeta">Dirección:</label>
+                            <div><input type="texto" id="txt-direccion" placeholder="Dirección completa" />
+                            </div>
+                        </div>
+                        <div class="sct-formulario_nombre">
+                            <label for="txt-nombreTarjeta">Cuidado especial:</label>
+                            <div><input type="texto" id="txt-cuidado" placeholder="Por favor, ser específico" />
+                            </div>
+                        </div>
+                        <div class="sct-formulario_nombre">
+                            <label for="txt-nombreTarjeta">Padecimiento:</label>
+                            <div><input type="texto" id="txt-padecimiento" placeholder="Por favor, ser específico" />
+                            </div>
+                        </div>
+                        <button type="button" id="btn-enviar">Agregar</button>
+                    </div>
+                </section>
+            </form>
+        </div>
+        <div class="sct-botones-metodosdePago">
+            <a href="../html/mascotas.html" class="btn-volver">Volver</a>
+
+        </div>
+    </section>
+    <script src="../js/mascotasregistro.js"></script>
+    <script src="../js/nav.js"></script>
+</body>

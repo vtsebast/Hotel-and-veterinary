@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <script src="https://kit.fontawesome.com/693a755d78.js" crossorigin="anonymous"></script>
+
+    <!-- 2. Archivo que contiene la tipografia de la letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- 3. Estilos personalizados -->
+    <link rel="stylesheet" href="../css/tablas.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/metodosPago.css">
+    <title>Moka - Inicio</title>
+
+</head>
+
+<body>
+    <header class="header-principal">
+        <div class="Logo">
+            <img src="../imgs/Mokalogo.png" alt="Logo de Moka">
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="../html/citas.html">Citas</a>
+                <a href="">Expedientes</a>
+                <a href="../html/perfilUsuario.html">Mi perfil</a>
+                <a href="../html/mascotas.html">Mascotas</a>
+                <a href="">Reportes</a>
+                <a href="../html/reserv.html">Reservaciones</a>
+                <a href="../html/usuarios.html">Usuarios</a>
+                <a href="../html/pagos.html">Pagos</a>
+            </nav>
+            <div class="divider"></div>
+            <div class="iniciar-sesion">
+                <a href="../index.html" id="iniciar-sesion-button">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+    <section id="sct-lista">
+        <h1>Citas</h1>
+
+        <div class="sct-botones-metodosdePago">
+            <a href="../html/inicioUsuarioSecre.html" class="btn-volver" id="btn-volver">Volver</a>
+            <a href="../html/registroCitaSecre.html" class="btn-verTransaccion">Crear cita</a>
+        </div>
+
+        <div class="bloqueTabla">
+
+
+            <table class="tbl" class="tbl-info">
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Mascota</th>
+                        <th>Fecha y hora</th>
+                        <th>Doctor</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+
+                <tbody class="tb-clientes" class="tbl-nombres">
+                    <tr>
+                        <td>Marlon</td>
+                        <td>Leka</td>
+                        <td>10-2-22 / 8:40</td>
+                        <td>Rodrigo</td>
+                        <td>
+                            <button class="btn-editar">Modificar</button>
+                            <button class="btn-eliminar">Cancelar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pablo</td>
+                        <td>Cratos</td>
+                        <td>20-3-22 / 10:00</td>
+                        <td>Emanuel</td>
+                        <td>
+                            <button type="button" class="btn-editar">Modificar</button>
+                            <button type="button" class="btn-eliminar">Cancelar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Roger</td>
+                        <td>traqui</td>
+                        <td>31-5-22 / 12:15</td>
+                        <td>Caleb</td>
+                        <td>
+                            <button class="btn-editar">Modificar</button>
+                            <button class="btn-eliminar">Cancelar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sebastian</td>
+                        <td>ishod</td>
+                        <td>18-3-22 / 1:00</td>
+                        <td>Marlen</td>
+                        <td>
+                            <button class="btn-editar">Modificar</button>
+                            <button class="btn-eliminar">Cancelar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Susan</td>
+                        <td>cacique</td>
+                        <td>10-2-22 / 4:00</td>
+                        <td>Enrique</td>
+                        <td>
+                            <button class="btn-editar">Modificar</button>
+                            <button class="btn-eliminar">Cancelar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marco</td>
+                        <td>misi</td>
+                        <td>20-3-22 / 10:00</td>
+                        <td>Ofelia</td>
+                        <td>
+                            <button class="btn-editar">Modificar</button>
+                            <button class="btn-eliminar">Cancelar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pablo</td>
+                        <td>seibo</td>
+                        <td>27-3-22 / 8:00</td>
+                        <td>Emanuel</td>
+                        <td>
+                            <button class="btn-editar">Modificar</button>
+                            <button class="btn-eliminar">Cancelar</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+    </section>
+</body>
+<script src="../js/citas.js"></script>
+<script src="../js/nav.js"></script>
+
+</html>

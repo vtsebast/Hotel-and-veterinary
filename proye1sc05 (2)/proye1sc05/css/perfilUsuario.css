@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sct-perfilUsuario {
+    font-size: 20px;
+    display: flex;
+    padding-top: 7%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+}
+
+.sct-perfilUsuario .sct-infoUsuario {
+    padding-top: 3%;
+    width: 40%;
+}
+
+.sct-perfilUsuario .sct-infoUsuario div {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sct-perfilUsuario .sct-infoUsuario div p {
+    display: flex;
+}
+
+.sct-btnperfilUsuario {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4%;
+}
+
+.btn-volver {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 2px;
+    border: none;
+    background: #05C793;
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-editar {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 2px;
+    border: none;
+    background: #972181;
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-editar:hover {
+    background: #944986;
+}

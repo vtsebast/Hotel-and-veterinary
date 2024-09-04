@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.sct-botones-metodosdePago {
+    padding-top: 30px;
+    padding-left: 5%;
+}
+
+.formulario {
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    width: 30%;
+    margin: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-radius: 5%;
+    background-color: bisque;
+}
+
+.int {
+    padding-left: 20px;
+}
+
+.animal {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.animal img {
+    height: 50px;
+}
+
+#btn-guardar {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #f1542d;
+    border: none;
+    color: #ffffff;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#btn-guardar:hover {
+    background-color: #f89279;
+    color: white;
+    border: 0 solid white;
+    border-radius: 5px;
+}
+
+.calif #form {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+}
+
+#form label {
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.calif label {
+    color: grey;
+}
+
+.clasificacion {
+    width: 55%;
+    flex-direction: cell;
+    display: flex;
+    direction: rtl;
+    font-size: 25px;
+    align-items: center;
+}
+
+label:hover,
+label:hover~label {
+    color: orange;
+}
+
+input[type="radio"]:checked~label {
+    color: orange;
+}
+
+.btn-volver {
+    padding-top: 30px;
+    padding-left: 5%;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 2px;
+    border: none;
+    background: #05C793;
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

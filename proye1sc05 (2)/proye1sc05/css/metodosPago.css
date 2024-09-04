@@ -1,0 +1,14 @@
+   /* seccion de Botones para volver,agregar, etc */
+   
+   .sct-botones-metodosdePago {
+       padding-top: 5%;
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+   }
+   
+   .sct-botones-metodosdePago-abajo {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+   }

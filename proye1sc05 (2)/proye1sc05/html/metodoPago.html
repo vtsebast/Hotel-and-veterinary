@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <script src="https://kit.fontawesome.com/693a755d78.js" crossorigin="anonymous"></script>
+
+    <!-- 2. Archivo que contiene la tipografia de la letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <!-- 2. Archivo que contiene los scripts para funcionales especificas -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- 3. Estilos personalizados -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/agregarMetodoPago.css">
+    <link rel="stylesheet" href="../css/registro.css">
+    <title>Moka</title>
+</head>
+
+<body>
+    <header class="header-principal">
+        <div class="Logo">
+            <img src="../imgs/Mokalogo.png" alt="Logo de Moka">
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="../html/citas.html">Citas</a>
+                <a href="">Expedientes</a>
+                <a href="../html/perfilUsuario.html">Mi perfil</a>
+                <a href="../html/mascotas.html">Mascotas</a>
+                <a href="">Reportes</a>
+                <a href="../html/reserv.html">Reservaciones</a>
+                <a href="../html/usuarios.html">Usuarios</a>
+                <a href="../html/pagos.html">Pagos</a>
+            </nav>
+            <div class="divider"></div>
+            <div class="iniciar-sesion">
+                <a href="../index.html" id="iniciar-sesion-button">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+    <section class="sct-formularioMetodoPago">
+        <div class="sct-bloqueMetodoPago">
+            <div class="sct-metodoPago_titulo">
+                <p>Metodo de pago</p>
+            </div>
+
+            <form class="form">
+                <section class="sct-metodoPago">
+                    <div class="sct-formulario_metodoPago">
+                        <div class="sct-formulario_nombre">
+                            <label for="txt-nombreTarjeta">Nombre del portador de la tarjeta:</label>
+                            <div><input type="texto" id="txt-nombreHolder" placeholder="Nombre completo" />
+                            </div>
+                        </div>
+                        <div class="sct-formulario_numTarjeta">
+                            <label>Numero de la tarjeta:</label>
+                            <div>
+                                <input type="numero" class="int-tarjeta" id="int-tarjeta1" placeholder="****" maxlength="4" />
+                                <input type="numero" class="int-tarjeta" id="int-tarjeta2" placeholder="****" maxlength="4" />
+                                <input type="numero" class="int-tarjeta" id="int-tarjeta3" placeholder="****" maxlength="4" />
+                                <input type="numero" class="int-tarjeta" id="int-tarjeta4" placeholder="****" maxlength="4" />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sct-expiracion">
+                                <label>Fecha de expiracion:</label>
+                                <div class="sct-expiracionMesAnho">
+                                    <select id="seleccion-mesExpiracion">
+                <option> MM</option>
+                <option> 01</option>
+                <option> 02</option>
+                <option> 03</option>
+                <option> 04</option>
+                <option> 05</option>
+                <option> 06</option>
+                <option> 07</option>
+                <option> 08</option>
+                <option> 09</option>
+                <option> 10</option>
+                <option> 11</option>
+                <option> 12</option>
+              </select>
+                                    <select id="seleccion-anhoExpiracion">
+                <option>YYYY</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+                <option>2029</option>
+              </select>
+                                </div>
+                            </div>
+                            <div class="sct-ccv">
+                                <label>CCV</label>
+                                <input type="text" id="int-ccv" placeholder="CCV" maxlength="3" />
+                            </div>
+                        </div>
+
+                        <button type="button" id="btn-enviar">Agregar</button>
+                    </div>
+                </section>
+            </form>
+        </div>
+        <div class="sct-botones-metodosdePago">
+            <a href="../html/listarUsuariosMetodoPago.html" class="btn-volver">Volver</a>
+
+        </div>
+    </section>
+    <script src="../js/metodoPago.js"></script>
+    <script src="../js/nav.js"></script>
+</body>

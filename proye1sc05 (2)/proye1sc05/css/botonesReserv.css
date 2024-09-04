@@ -1,0 +1,64 @@
+/* seccion de Botones para volver,agregar, etc */
+
+.sct-botones-verdes {
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.btn-volver:hover {
+    background: #098a68;
+}
+
+
+#btn-modificar {
+    background: #972181;
+    border: transparent;
+    cursor: pointer;
+    padding: 0 20px;
+    margin: 0 20px;
+    display: inline;
+    color: white;
+    width: 60px;
+    border-radius: 5px;
+}
+
+#btn-modificar:hover {
+    background: #9a3c88;
+}
+
+#btn-cancelar {
+    background: rgb(196, 44, 44);
+    border: transparent;
+    cursor: pointer;
+    padding: 5px;
+    display: inline;
+    padding: 0 20px;
+    margin: 0 20px;
+    width: 60px;
+    border-radius: 5px;
+    color: white;
+}
+
+#btn-cancelar:hover {
+    background: #ce5454;
+}
+
+.btn-imprimir {
+    background: #05C793;
+    border: transparent;
+    cursor: pointer;
+    padding: 5px;
+    display: inline;
+    padding: 0 20px;
+    margin: 0 20px;
+    width: 60px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-imprimir:hover {
+    background: #0a946f;
+}

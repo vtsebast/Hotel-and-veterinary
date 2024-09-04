@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+}
+
+#txt-filtro {
+    font-size: 100%;
+}
+
+#sct-listacitas {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    padding: 7%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sct-listacitas h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+}
+
+.bloqueTabla {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    width: 105%;
+    border-radius: 7px;
+    border-style: ridge;
+    border-width: 2px;
+}
+

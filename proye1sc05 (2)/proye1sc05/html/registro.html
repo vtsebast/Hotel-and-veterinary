@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <script src="https://kit.fontawesome.com/693a755d78.js" crossorigin="anonymous"></script>
+
+    <!-- 2. Archivo que contiene la tipografia de la letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <!-- 2. Archivo que contiene los scripts para funcionales especificas -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- 3. Estilos personalizados -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/registro.css">
+    <title>Moka - Inicio</title>
+</head>
+
+<body>
+    <header class="header-principal">
+        <div class="Logo">
+            <img src="../imgs/Mokalogo.png" alt="Logo de Moka">
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="../html/servicios.html">Servicios</a>
+                <a href="../html/acercade.html">Acerca de</a>
+            </nav>
+            <div class="divider"></div>
+            <div class="iniciar-sesion">
+                <a href="../html/registro.html">Registrarse</a>
+                <a href="#" id="iniciar-sesion-button">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+    <section class="sct-registro">
+        <div class="sct-registro_titulo">
+            <p>Registro</p>
+        </div>
+        <div class="sct-registro_formulario">
+            <select id="Rol" class="ocultar">
+                <option>2</option>
+                </select>
+            <label>Nombre:</label>
+            <input type="Nombre" class="txt-form" id="txt-nombre" placeholder="Nombre">
+            <label>Apellidos:</label>
+            <input type="Correo Electronico" class="txt-form" id="txt-apellidos" placeholder="Apellidos">
+            <label>Número de cédula:</label>
+            <input type="Telefono" class="txt-form" id="txt-cedula" placeholder="Numero de cédula">
+            <label>Correo electrónico:</label>
+            <input type="Comentario" class="txt-form" id="txt-email" placeholder="Correo electrónico">
+            <label>Número de telefono:</label>
+            <input type="Text" class="txt-form" id="txt-telefono" placeholder="Número de teléfono">
+            <label>Contraseña:</label>
+            <input type="password" class="txt-form" id="txt-contrasena" placeholder="Contraseña">
+            <label>Confirme la contraseña:</label>
+            <input type="password" class="txt-form" id="txt-contrasena-confirm" placeholder="Confirmar contraseña">
+            <label>Dirección:</label>
+            <input type="Text" class="txt-form" id="txt-direccion" placeholder="Dirección">
+            <button type="button" id="btn-enviar">Enviar</button>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/registro.js"></script>
+    <script src="../js/servicio-general.js"></script>
+    <script src="../js/inicioSesion.js"></script>
+</body>

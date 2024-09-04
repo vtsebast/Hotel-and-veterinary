@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    padding-bottom: 5%;
+}
+
+h2 {
+    display: flex;
+    font-size: 30px;
+    padding-bottom: 5%;
+}
+
+.sct-perfilMascota {
+    font-size: 20px;
+    display: flex;
+    padding-top: 5%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoMascota {
+    padding-top: 3%;
+    margin-left: 100px;
+    display: flex;
+    align-content: center;
+    height: 200px;
+    margin-bottom: 4%;
+}
+
+.fotoMascota img {
+    height: 100%;
+}
+
+#sct-observaciones {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    padding: 5%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloqueTabla {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 7px;
+    border-style: ridge;
+    border-width: 2px;
+}
+
+.tbl-metodosPago {
+    width: 100%;
+}
+
+.tbl-metodosPago thead {
+    background-color: #D5520B;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tbl-metodosPago thead tr th {
+    padding: 10px 1%;
+    text-align: center;
+}
+
+.tbl-metodosPago tbody tr td {
+    padding: 10px 1%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.tbl-metodosPago tbody tr:nth-child(even) {
+    background: #7B818E;
+    color: white;
+    font-weight: bold;
+}
+
+.tbl-metodosPago tbody tr:nth-child(odd) {
+    background: #F0EFF4;
+    font-weight: bold;
+}
+
+#btn-editar {
+    margin: 2px;
+    background: #972181;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 65px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#btn-editar:hover {
+    background: #ff8870;
+}
+
+#btn-eliminar {
+    font-weight: bold;
+    margin: 2px;
+    color: white;
+    border: none;
+    background: rgb(122, 1, 1);
+    cursor: pointer;
+    padding: 5px;
+    width: 65px;
+    border-radius: 5px;
+}
+
+#btn-eliminar:hover {
+    background: #ff6b6b;
+}
+
+.sct-botones-metodosdePago {
+    padding-top: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-volver {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 2px;
+    border: none;
+    background: #05C793;
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-agregarMetodoPago {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 2px;
+    border: none;
+    background: #05C793;
+    cursor: pointer;
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,72 @@
+.sct-info-empresa .sct-info__fotografia {
+    display: flex;
+    width: 90%;
+    border-style: solid;
+    background-image: url(../imgs/cat-vet-img.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    border-style: solid;
+    box-shadow: inset 10px 10px 10px rgb(245, 245, 245);
+}
+
+.sct-servicios li.sct-servicios_sub-titulo p {
+    font-size: 60px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+.sct-servicios .sct-servicios_body-servicios {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sct-servicios_lista {
+    height: 80%;
+    width: 40%;
+    justify-content: center;
+    transition: all 2s;
+}
+
+.sct-servicios ul {
+    border-style: solid;
+    border-color: #05C793;
+    height: 70%;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 20px;
+    animation: light 1s infinite;
+}
+
+#sct-servicios_lista:hover {
+    height: 80%;
+    width: 45%;
+  }
+
+.sct-servicios li {
+    margin-bottom: 30px;
+    align-self: center;
+    justify-self: center;
+}
+
+.sct-servicios a {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    border-style: solid;
+    border-color: #05C793;
+    border-width: 2px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-out;
+}
+
+.sct-servicios a:hover {
+    background-color: #05C793;
+    color: white;
+}
